@@ -15,5 +15,8 @@ class GetSumTest < MiniTest::Test
         assert_equal 3, @sum.get_sum(1,2)
         assert_equal 14, @sum.get_sum(5,-1)
         assert_equal 1, @sum.get_sum(1,1)
+        assert_equal 0, @sum.get_sum(1,-1)
+        assert_equal 0, @sum.get_sum(5,-5)
+        assert_equal -45, @sum.get_sum(-10,-5)
     end
 end

@@ -1,9 +1,5 @@
 class GetSum
     def get_sum(a, b)
-        if b.positive?
-            (a..b).sum
-        elsif b.negative?
-            (b..a).sum 
-        end
+        ([a,b].min..[a,b].max).sum
     end
 end
